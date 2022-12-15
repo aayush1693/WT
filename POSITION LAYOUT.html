@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Postional Layout Management in CSS</title>
+  <style type="text/css">
+   
+    .b1{
+      height: 600px;
+      width: 600px;
+      border: 1px solid red ;
+      margin: 10%;
+      position: relative;
+     
+
+    
+      
+    }
+    .b2{
+        
+      height: 500px;
+      width: 500px;
+      border: 1px solid green ;
+      margin: 8%;
+      position: relative;
+      
+    }
+    .b3{
+        
+      height: 400px;
+      width: 400px;
+      border: 1px solid blue ;
+      margin: 10%;
+      position: relative;
+    }
+    .b4{
+        
+      height: 300px;
+      width: 300px;
+      border: 1px solid black ;
+      margin: 10%;
+      position: relative;
+    }
+    .b5{
+        
+      height: 200px;
+      width: 200px;
+      border: 1px solid purple ;
+      margin: 16%;
+      position: relative;
+    }
+    .dot{
+        height: 30px;
+        width: 30px;
+        background-color: #0a001a;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        
+       
+    }
+  </style>
+</head>
+<body>
+
+  <div class="b1">
+        <div class="dot" style="top: 0px; left: 0px;"></div>
+        <div class="dot" style=" bottom: 0px; right: 0px;"></div>
+    <div class="b2">
+          <div class="dot" style="top: 0px; left: 0px;"></div>
+          <div class="dot" style=" bottom: 0px; right: 0px;"></div>
+        <div class="b3">
+            <div class="dot" style="bottom: 0px; left: 0px;"></div>
+            <div class="dot" style=" top: 0px; right: 0px;"></div>
+          <div class="b4">
+              <div class="dot" style="top: 0px; left: 0px;"></div>
+              <div class="dot" style=" bottom: 0px; left: 0px;"></div>
+
+            <div class="b5">
+                <div class="dot" style="bottom: 0px; left: 0px;"></div>
+                <div class="dot" style=" top: 0px; right: 0px;"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+</body>
+</html>
