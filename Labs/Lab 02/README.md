@@ -1,12 +1,12 @@
 # Lab 2: Flow layout and Positioned layout in CSS  
 - *Create a wrapper element as shown in the figure below to fill the empty space in smaller viewports. It specifies a maximum width and will horizontally center itself within the parent if space is available. It includes some horizontal "breathing room" so that its children aren't pressed up against the viewport's edges.*         
-   ![Gif](../Lab-2/Assests/wrapper.gif "Gif")
+
 
 hint: max-width
 - *Design a circuit as shown in the figure.*
-    ![image](../Lab-2/Assests/circuit.png "image")
+  
 - *Design a decorative item as shown in the screenshot below.*  
-    ![image](..//Lab-2/Assests/decorative.png "image")  
+      
   
 ___________________________________________________________________________
 
