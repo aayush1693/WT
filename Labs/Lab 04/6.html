@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form Validation</title>
+</head>
+<body>
+<form>
+   <label for="input"><br>Name:</label>
+  <input type="text" id="name" required>
+  <label for="input"><br>Email:</label>
+  <input type="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+  <label for="input"><br>Phone No.:</label>
+  <input type="tel" id="phone" required pattern="[0-9]{10}">
+  <label>Country</label>
+  <select id="country" required>
+    <option value="" label="Select a country ... " selected="selected">Select a country ... </option>
+            <option value="NP" label="Nepal">Nepal</option>
+            <option value="US" label="USA">USA</option>
+            <option value="CA" label="Canada">Canada</option>
+  </select>
+  <label for="input"><br>Password:</label>
+  <input type="password" id="password" required>
+</form>
+<button onclick="validate()">Submit</button>
+<script type="text/javascript">
+	function validate() {
+  let name = document.getElementById("name");
+  let email = document.getElementById("email");
+  let phone = document.getElementById("phone");
+  let country = document.getElementById("country");
+  let password = document.getElementById("password");
+  if (name.value === "" ) {
+    alert ( "Please enter your name.");
+  }else if (email.value === "" || !email.checkValidity()) {
+    alert("Please enter a valid email.");
+  }else if (phone.value === "" || !phone.checkValidity()) {
+    alert("Please enter a valid phone number.");
+  }else if (country.value === "" ) {
+    alert("Please select a country.");
+  }else if (password.value === "" ) {
+    alert("Please enter a password.");
+  }else{
+    alert("Form submitted.");
+  } 
+}
+
+</script>
+</body>
+</html>
